@@ -40,5 +40,23 @@ namespace Excercise_2_Algoritma_Semester_3
 
             }
         }
+
+        public void firstalgorithm()
+        {
+          for(int i = 1; i < n; i++)
+            {
+                for (int RA = 0; RA < n; RA++)
+                {
+                  if(rap[RA] > rap[RA + 1])
+                    {
+                        int temp;
+                        temp = rap[RA];
+                        rap[RA] = rap[RA + 1];
+                        rap[RA + 1] = temp;
+                    }
+                }
+            }
+        }
+
     }
 }
